@@ -1,0 +1,20 @@
+NAME
+    package Mojolicious::Plugin::AssetPack::Pipe::ElmLang - process .elm
+    files
+
+VERSION
+0.1
+DESCRIPTION
+    Mojolicious::Plugin::AssetPack::Pipe::ElmLang will process
+    <http://elm-lang.org/> files into JavaScript.
+
+    This module require the "elm-make" program to be installed. "elm-make"
+    will be automatically installed using <https://www.npmjs.com/> unless
+    already installed.
+
+METHODS
+  process
+See "process" in Mojolicious::Plugin::AssetPack::Pipe.
+SEE ALSO
+    Mojolicious::Plugin::AssetPack.
+
