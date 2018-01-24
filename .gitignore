@@ -14,3 +14,7 @@
 /META*
 /MYMETA*
 /pm_to_blib
+t/assets/cache
+t/assets/assetpack.db
+examples/node_modules
+examples/package-lock.json

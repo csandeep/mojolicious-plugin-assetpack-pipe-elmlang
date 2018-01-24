@@ -1,4 +1,4 @@
 Revision history for perl distribution Mojolicious-Plugin-AssetPack-Pipe-ElmLang
 
 0.01 Not Released
- - Started project
+ - Experimental support to build elm sources
