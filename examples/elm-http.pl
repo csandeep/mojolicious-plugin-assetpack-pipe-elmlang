@@ -5,7 +5,7 @@ use Mojolicious::Lite;
 plugin 'AssetPack' => {pipes => ['ElmLang']};
 app->asset->store->paths(['../t/assets']);
 
-# Process 01-button.elm
+# Process 05-http.elm
 app->asset->process('main.js' => '05-http.elm');
 
 # Set up the mojo lite application and start it
@@ -17,7 +17,7 @@ __DATA__
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Button</title>
+<title>Test</title>
 <style>
     html,head,body { padding:0; margin:0; }
     body { font-family: calibri, helvetica, arial, sans-serif; }

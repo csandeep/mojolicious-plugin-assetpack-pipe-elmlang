@@ -4,7 +4,7 @@ use Mojo::Base 'Mojolicious::Plugin::AssetPack::Pipe';
 use Mojolicious::Plugin::AssetPack::Util qw(diag $CWD DEBUG);
 use File::Temp;
 
-our $VERSION = '0.1.1';
+our $VERSION = '0.2';
 
 sub process {
     my ($self, $assets) = @_;
@@ -69,11 +69,11 @@ sub _install_elm {
 
 =head1 NAME
 
-package Mojolicious::Plugin::AssetPack::Pipe::ElmLang - process .elm files
+Mojolicious::Plugin::AssetPack::Pipe::ElmLang - process .elm files
 
 =head1 VERSION
-0.1.1
 
+0.2.2
 
 =head1 DESCRIPTION
 
@@ -84,10 +84,32 @@ This module require the C<elm-make> program to be installed. C<elm-make> will be
 automatically installed using L<https://www.npmjs.com/> unless already
 installed.
 
-=head1 METHODS
+=head1 SYNOPSIS
 
-=head2 process
-See L<Mojolicious::Plugin::AssetPack::Pipe/process>.
+    use lib '../lib';
+    use Mojolicious::Lite;
+
+    plugin 'AssetPack' => {pipes => ['ElmLang']};
+
+    app->asset->process('app.js' => 'test.elm');
+
+    # Set up the mojo lite application and start it
+    get '/' => 'index';
+    app->start;
+    __DATA__
+    @@ index.html.ep
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+    <title>Test</title>
+    %= asset 'app.js';
+    </head>
+    <body>
+    <script type="text/javascript">
+        Elm.Main.fullscreen()
+    </script>
+    </body>
+    </html>
 
 =head1 SEE ALSO
 
