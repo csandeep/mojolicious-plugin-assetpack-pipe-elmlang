@@ -4,7 +4,7 @@ use Mojo::Base 'Mojolicious::Plugin::AssetPack::Pipe';
 use Mojolicious::Plugin::AssetPack::Util qw(diag $CWD DEBUG);
 use File::Temp;
 
-our $VERSION = '0.1';
+our $VERSION = '0.1.1';
 
 sub process {
     my ($self, $assets) = @_;
@@ -72,7 +72,7 @@ sub _install_elm {
 package Mojolicious::Plugin::AssetPack::Pipe::ElmLang - process .elm files
 
 =head1 VERSION
-0.1
+0.1.1
 
 
 =head1 DESCRIPTION
