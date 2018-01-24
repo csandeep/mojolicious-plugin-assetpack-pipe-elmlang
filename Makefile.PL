@@ -25,7 +25,7 @@ my %WriteMakefileArgs = (
       homepage   => 'https://github.com/csandeep/mojolicious-plugin-assetpack-pipe-elmlang',
       repository => {
         type => 'git',
-        url  => 'https://github.com/sandeep/mojolicious-plugin-assetpack-pipe-elmlang',
+        url  => 'https://github.com/csandeep/mojolicious-plugin-assetpack-pipe-elmlang.git',
         web  => 'https://github.com/csandeep/mojolicious-plugin-assetpack-pipe-elmlang',
       },
     },
