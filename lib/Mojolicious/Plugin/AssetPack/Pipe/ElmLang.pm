@@ -4,7 +4,7 @@ use Mojo::Base 'Mojolicious::Plugin::AssetPack::Pipe';
 use Mojolicious::Plugin::AssetPack::Util qw(diag $CWD DEBUG);
 use File::Temp;
 
-our $VERSION = '0.2';
+our $VERSION = '0.3';
 
 sub process {
     my ($self, $assets) = @_;
@@ -74,7 +74,7 @@ Mojolicious::Plugin::AssetPack::Pipe::ElmLang - process .elm files
 
 =head1 VERSION
 
-0.2.2
+0.3.2
 
 =head1 DESCRIPTION
 
