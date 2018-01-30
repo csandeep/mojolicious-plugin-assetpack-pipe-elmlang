@@ -1,10 +1,10 @@
 ## NAME
 
-package Mojolicious::Plugin::AssetPack::Pipe::ElmLang - process .elm files
+Mojolicious::Plugin::AssetPack::Pipe::ElmLang - process .elm files
 
 ## VERSION
 
-0.1.1
+0.2.2
 
 ## DESCRIPTION
 
