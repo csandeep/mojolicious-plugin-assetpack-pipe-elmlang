@@ -13,6 +13,7 @@ sub process {
     my $store = $self->assetpack->store;
 
     my $file;
+    my $mode = $self->app->mode;
 
     # Loop over Mojolicious::Plugin::AssetPack::Asset objects
     $assets->each(
@@ -37,7 +38,7 @@ sub process {
 
             my $tmp = File::Temp->new( SUFFIX => '.js' );
             push @args , '--yes', '--output' , $tmp->filename;
-            push @args , '--debug ' if DEBUG;
+            push @args , '--debug' if $mode eq 'development';
 
             my $file = $asset->path ? $asset : Mojo::Asset::File->new->add_chunk($asset->content);
             
